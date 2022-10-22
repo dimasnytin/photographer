@@ -14,14 +14,91 @@
   <!-- загрузчик предсираницы -->
 
 </head>
-<body>
+<body class="active">
   <!-- PREOLOADING ЗАГРУЗЧИК -->
   <div class="loading" data-loading>
     <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
     <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
   </div>
 
-  <!-- https://youtu.be/jOA6ROBXdRE?t=965 -->
+  <!-- HEADER -->
+  <header class="header active" data-header>
+
+    <!-- контейнер -->
+    <div class="container">
+    <!-- логотип -->
+    <a class="logo" href="#">
+      <img src="./assets/images/logo.svg" width="40" height="40" alt="Richard home">
+    </a>
+    <!-- кнопка открытия мобильного меню -->
+    <button class="nav-open-btn" aria-label="open-menu">
+      <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+    </button>
+    <!-- NAVBAR -->
+    <nav class="navbar active" data-navbar>
+
+      <div class="navbar-top">
+        <!-- логотип второй -->
+        <a href="#" class="logo">
+          <img class="img" src="./assets/images/nav-logo.svg" width="140" height="40" alt="Richard home">
+        </a>
+
+        <!-- кнопка закрытия мобильного меню -->
+        <button class="nav-close-btn" aria-label="close menu">
+          <span class="span one"></span>
+          <span class="span two"></span>
+        </button>
+      </div>
+
+      <!-- список меню -->
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-link" href="#home">Home</a>
+        </li>
+
+        <li class="navbar-item">
+          <a class="navbar-link" href="#gallery">Gallery</a>
+        </li>
+
+        <li class="navbar-item">
+          <a class="navbar-link" href="#about">About</a>
+        </li>
+
+        <li class="navbar-item">
+          <a class="navbar-link" href="#services">Services</a>
+        </li>
+
+        <li class="navbar-item">
+          <a class="navbar-link" href="#portfolio">Portfolio</a>
+        </li>
+
+        <li class="navbar-item">
+          <a class="navbar-link" href="#contact us">Contact us</a>
+        </li>
+      </ul>
+      <!-- вход и регистрация -->
+      <button class="login-btn">
+        <img src="./assets/images/user.svg" alt="user icon">
+
+        <span class="sapn">Login</span>
+      </button>
+
+      <p class="navbar-title">My Address</p>
+
+      <address class="navbar-text">
+        Belarus, Mogilev st.Zheleznyakova 
+      </address>
+
+      <p class="navbar-text">
+        Хочешь этот сайт себе? Позвони мне: 
+      <a class="contact-link" href="tel:+375293651156">+375 (29) 365 11 56</a>
+      </p>
+    </nav>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
 
 
 
