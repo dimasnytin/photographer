@@ -5,61 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Dima Snytin</title>
+  <title>Бартер сайт для фотографа</title>
   <meta name="title" content="Dima Snytin">
   <meta name="description" content="This is a photographer portfolio html template, made by codewithsadee.">
-
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - custom font link
-  -->
   <link rel="stylesheet" href="./assets/font/font.css">
 
-  <!-- 
-    - preload images
-  -->
+  <!-- предзагрузчик страницы - картинка старт-->
   <link rel="preload" as="image" href="./assets/images/loading.svg">
   <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+  <!-- предзагрузчик страницы - картинка стоп-->
 
 </head>
 
 <body class="active" id="top">
 
-  <!-- 
-    -#PRELOADING
-  -->
-
+  
+  <!--PRELOADING - предзагрузчик страницы старт-->
   <div class="loading" data-loading>
-    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
-    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+    <img class="img" src="./assets/images/loading.svg" width="55" height="55" alt="loading">
+    <img class="circle" src="./assets/images/loading-circle.svg" width="70" height="70" alt="">
   </div>
+  <!--PRELOADING - предзагрузчик страницы стоп-->
 
 
 
-
-
-  <!-- 
-    - #HEADER
-  -->
-
+  <!-- HEADER логотип-кнопка меню-меню боковое-адрес и телефон старт-->
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="40" height="40" alt="Richard home">
+      <a class="logo" href="#">
+        <img src="./assets/images/logo.svg" width="40" height="40" alt="Dima home">
       </a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -69,8 +46,8 @@
       <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./assets/images/nav-logo.svg" width="140" height="40" alt="Richard home" class="img">
+          <a class="logo" href="#">
+            <img class="img" src="./assets/images/nav-logo.svg" width="140" height="40" alt="Dima home">
           </a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -78,7 +55,7 @@
             <span class="span two"></span>
           </button>
         </div>
-
+        <!-- меню старт-->
         <ul class="navbar-list">
 
           <li class="navbar-item">
@@ -106,46 +83,51 @@
           </li>
 
         </ul>
+        <!-- меню стоп -->
 
+        <!-- кнопка регистрация старт -->
         <button class="login-btn">
           <img src="./assets/images/user.svg" width="21" height="21" alt="user icon">
 
           <span class="span">Login</span>
         </button>
+        <!-- кнопка регистрация стоп -->
 
+        <!-- мой адрес старт -->
         <p class="navbar-title">My Address</p>
 
         <address class="navbar-text">
-          3287 Indiana Avenue, Waialua, Hawaii
+        Belarus, Mogilev st. Zheleznykova
         </address>
+        <!-- мой адрес стоп -->
 
+        <!-- заказать звонок старт -->
         <p class="navbar-text">
-          Urgent issue? call us at
-          <a href="tel:8085613846" class="contact-link">808-561-3846</a>
+          Хочешь себе этот сайт?
+          <a href="tel:+375293651156" class="contact-link">+375(29)365-11-56</a>
         </p>
-
+        <!-- заказать звонок стоп -->
       </nav>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
     </div>
   </header>
+  <!-- HEADER логотип-кнопка меню-меню боковое-адрес и телефон стоп-->
 
 
 
 
-
+  <!-- основной контент старт -->
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
+      
+      <!-- #HERO главный экран и ссылки меню старт-->
       <section class="section hero" id="home" aria-label="home">
         <div class="container">
 
-          <img src="./assets/images/hero-banner.png" width="322" height="322" alt="" class="hero-banner">
+          <img class="hero-banner" src="./assets/images/hero-banner.png" width="322" height="322" alt="">
 
           <div class="hero-content">
 
@@ -167,29 +149,32 @@
         <img src="./assets/images/hero-shape.svg" width="211" height="189" alt="" class="shape">
 
       </section>
+      <!-- #HERO главный экран и ссылки меню стоп-->
 
 
 
 
-
-      <!-- 
-        - #GALLERY
-      -->
-
+      
+      <!-- #GALLERY галерея работ старт-->
       <section class="section gallery" id="gallery">
         <div class="container">
 
+          <!-- общий список галерии старт -->
           <ul class="gallery-list">
 
+            <!-- работа номер 1 старт -->
             <li class="gallery-item" data-reveal>
 
+              <!-- галерея-1 старт -->
               <div class="gallery-card">
-
+                <!-- картинка старт -->
                 <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
                   <img src="./assets/images/gallery-1.jpg" width="450" height="625" loading="lazy" alt="The Drunken"
                     class="img-cover">
                 </figure>
+                <!-- картинка стоп -->
 
+                <!-- заголовок старт -->
                 <div class="card-content">
                   <h3 class="h6">
                     <a href="#" class="card-title">The Drunken</a>
@@ -197,21 +182,29 @@
 
                   <span class="card-tag">Food, Event</span>
                 </div>
+                <!-- заголовок стоп -->
 
+                <!-- кнопка ссылка старт -->
                 <a href="#" class="btn-icon">
                   <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
                     alt="arrow-forward icon">
                 </a>
-
+                <!-- кнопка ссылка стоп -->
               </div>
+              <!-- галерея-1 стоп -->
 
+
+              <!-- галерея-2 старт -->
               <div class="gallery-card">
 
+                <!-- картинка старт -->
                 <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
                   <img src="./assets/images/gallery-2.jpg" width="450" height="625" loading="lazy"
                     alt="Lettuce Entertain" class="img-cover">
                 </figure>
+                <!-- картинка стоп -->
 
+                <!-- заголовок старт -->
                 <div class="card-content">
                   <h3 class="h6">
                     <a href="#" class="card-title">Lettuce Entertain</a>
@@ -219,25 +212,35 @@
 
                   <span class="card-tag">Landscape</span>
                 </div>
+                <!-- заголовок стоп -->
 
+                <!-- кнопка ссылка старт -->
                 <a href="#" class="btn-icon">
                   <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
                     alt="arrow-forward icon">
                 </a>
+                <!-- кнопка ссылка стоп -->
 
               </div>
+              <!-- галерея-2 старт -->
 
             </li>
+            <!-- работа номер 1 стоп -->
 
+            <!-- работа номер 2 старт -->
             <li class="gallery-item" data-reveal>
 
+              <!-- галерея-3 старт -->
               <div class="gallery-card">
 
+                <!-- картинка старт -->
                 <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
                   <img src="./assets/images/gallery-3.jpg" width="450" height="625" loading="lazy" alt="Leaping Lizard"
                     class="img-cover">
                 </figure>
+                <!-- картинка стоп -->
 
+                <!-- заголовок старт -->
                 <div class="card-content">
                   <h3 class="h6">
                     <a href="#" class="card-title">Leaping Lizard</a>
@@ -245,21 +248,29 @@
 
                   <span class="card-tag">Model, Fashion</span>
                 </div>
+                <!-- заголовок стоп -->
 
+                <!-- кнопка ссылка старт -->
                 <a href="#" class="btn-icon">
                   <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
                     alt="arrow-forward icon">
                 </a>
+                <!-- кнопка ссылка стоп -->
 
               </div>
-
+              <!-- галерея-3 стоп -->
+                              
+              <!-- галерея-4 старт -->
               <div class="gallery-card">
 
+                <!-- картинка старт -->
                 <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
                   <img src="./assets/images/gallery-4.jpg" width="450" height="625" loading="lazy" alt="Juan More Taco"
                     class="img-cover">
                 </figure>
+                <!-- картинка стоп -->
 
+                <!-- заголовок старт -->
                 <div class="card-content">
                   <h3 class="h6">
                     <a href="#" class="card-title">Juan More Taco</a>
@@ -267,25 +278,35 @@
 
                   <span class="card-tag">Architecture, Event</span>
                 </div>
+                <!-- заголовок стоп -->
 
+                <!-- кнопка ссылка старт -->
                 <a href="#" class="btn-icon">
                   <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
                     alt="arrow-forward icon">
                 </a>
+                <!-- кнопка ссылка стоп -->
 
               </div>
+              <!-- галерея-4 стоп -->
 
             </li>
+            <!-- работа номер 2 стоп -->
 
+            <!-- работа номер 3 старт -->
             <li class="gallery-item" data-reveal>
 
+              <!-- галерея-4 старт -->
               <div class="gallery-card">
 
+                <!-- картинка старт -->
                 <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
                   <img src="./assets/images/gallery-5.jpg" width="450" height="625" loading="lazy" alt="Goldilox Bagels"
                     class="img-cover">
                 </figure>
+                <!-- картинка стоп -->
 
+                <!-- заголовок старт -->
                 <div class="card-content">
                   <h3 class="h6">
                     <a href="#" class="card-title">Goldilox Bagels</a>
@@ -293,21 +314,29 @@
 
                   <span class="card-tag">People, Film</span>
                 </div>
+                <!-- заголовок стоп -->
 
+                <!-- кнопка ссылка старт -->
                 <a href="#" class="btn-icon">
                   <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
                     alt="arrow-forward icon">
                 </a>
+                <!-- кнопка ссылка стоп -->
 
               </div>
+              <!-- галерея-4 стоп -->
 
+              <!-- галерея-5 старт -->
               <div class="gallery-card">
 
+                <!-- картинка старт -->
                 <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
                   <img src="./assets/images/gallery-6.jpg" width="450" height="625" loading="lazy" alt="Cookie Monstah"
                     class="img-cover">
                 </figure>
+                <!-- картинка стоп -->
 
+                <!-- заголовок старт -->
                 <div class="card-content">
                   <h3 class="h6">
                     <a href="#" class="card-title">Cookie Monstah</a>
@@ -315,25 +344,35 @@
 
                   <span class="card-tag">Wedding, Event</span>
                 </div>
+                <!-- заголовок стоп -->
 
+                <!-- кнопка ссылка старт -->
                 <a href="#" class="btn-icon">
                   <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
                     alt="arrow-forward icon">
                 </a>
+                <!-- кнопка ссылка стоп -->
 
               </div>
+              <!-- галереня-5 стоп -->
 
             </li>
+            <!-- работа номер 3 стоп -->
 
+            <!-- работа номер 4 старт -->
             <li class="gallery-item" data-reveal>
 
+              <!-- галерея-6 старт -->
               <div class="gallery-card">
 
+                <!-- картинка старт -->
                 <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
                   <img src="./assets/images/gallery-7.jpg" width="450" height="625" loading="lazy"
                     alt="Divine Pastabilities" class="img-cover">
                 </figure>
+                <!-- картинка стоп -->
 
+                <!-- заголовок старт -->
                 <div class="card-content">
                   <h3 class="h6">
                     <a href="#" class="card-title">Divine Pastabilities</a>
@@ -341,21 +380,29 @@
 
                   <span class="card-tag">Wedding, Model</span>
                 </div>
+                <!-- заголовок стоп -->
 
+                <!-- кнопка ссылка старт -->
                 <a href="#" class="btn-icon">
                   <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
                     alt="arrow-forward icon">
                 </a>
+                <!-- кнопка ссылка стоп -->
 
               </div>
+              <!-- галерея-6 стоп -->
 
+              <!-- галерея-7 старт -->
               <div class="gallery-card">
 
+                <!-- картинка старт -->
                 <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
                   <img src="./assets/images/gallery-8.jpg" width="450" height="625" loading="lazy"
                     alt="The Lockhart Bar" class="img-cover">
                 </figure>
+                <!-- картинка стоп -->
 
+                <!-- заголовок старт -->
                 <div class="card-content">
                   <h3 class="h6">
                     <a href="#" class="card-title">The Lockhart Bar</a>
@@ -363,17 +410,24 @@
 
                   <span class="card-tag">Health & Wellnes</span>
                 </div>
+                <!-- заголовок стоп -->
 
+                <!-- кнопка ссылка старт -->
                 <a href="#" class="btn-icon">
                   <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
                     alt="arrow-forward icon">
                 </a>
+                <!-- кнопка ссылка стоп -->
 
               </div>
+              <!-- галерея-7 стоп -->
 
             </li>
+            <!-- работа номер 4 стоп -->
 
           </ul>
+          <!-- общий список галерии стоп -->
+
 
           <a href="#service" class="scroll-down">
             <img src="./assets/images/scroll-down.svg" width="40" height="66" loading="lazy" alt="mouse scroll">
@@ -383,20 +437,21 @@
 
         </div>
       </section>
+      <!-- #GALLERY галерея работ стоп-->
 
 
 
 
 
-      <!-- 
-        - #CATEGORY
-      -->
-
+      
+      <!-- #CATEGORY катагории работ для съемок старт-->
       <section class="section category" aria-label="photography category">
         <div class="container">
 
+          <!-- весь список категорий старт -->
           <ul class="category-list">
 
+            <!-- карточка-1 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -409,7 +464,9 @@
 
               </a>
             </li>
+            <!-- карточка-1 стоп -->
 
+            <!-- карточка-2 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -422,7 +479,9 @@
 
               </a>
             </li>
+            <!-- карточка-2 стоп -->
 
+            <!-- карточка-3 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -435,7 +494,9 @@
 
               </a>
             </li>
+            <!-- карточка-3 стоп -->
 
+            <!-- карточка-4 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -448,7 +509,9 @@
 
               </a>
             </li>
+            <!-- карточка-4 стоп -->
 
+            <!-- карточка-5 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -461,7 +524,9 @@
 
               </a>
             </li>
+            <!-- карточка-5 стоп -->
 
+            <!-- карточка-6 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -474,7 +539,9 @@
 
               </a>
             </li>
+            <!-- карточка-6 стоп -->
 
+            <!-- карточка-7 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -487,7 +554,9 @@
 
               </a>
             </li>
+            <!-- карточка-7 стоп -->
 
+            <!-- карточка-8 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -500,7 +569,9 @@
 
               </a>
             </li>
+            <!-- карточка-8 стоп -->
 
+            <!-- карточка-9 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -513,7 +584,9 @@
 
               </a>
             </li>
+            <!-- карточка-9 стоп -->
 
+            <!-- карточка-10 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -526,7 +599,9 @@
 
               </a>
             </li>
+            <!-- карточка-10 стоп -->
 
+            <!-- карточка-11 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -539,7 +614,9 @@
 
               </a>
             </li>
+            <!-- карточка-11 стоп -->
 
+            <!-- карточка-12 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -552,7 +629,9 @@
 
               </a>
             </li>
+            <!-- карточка-12 стоп -->
 
+            <!-- карточка-13 старт -->
             <li class="category-item" data-reveal>
               <a href="#" class="category-card">
 
@@ -565,32 +644,36 @@
 
               </a>
             </li>
+            <!-- карточка-13 стоп -->
 
           </ul>
+          <!-- весь список категорий стоп -->
 
         </div>
       </section>
+      <!-- #CATEGORY катагории работ для съемок стоп-->
 
 
 
 
-
-      <!-- 
-        - #ABOUT
-      -->
-
+      
+      <!-- #ABOUT обо мне старт-->
       <section class="section about" id="about" aria-label="about me">
         <div class="container">
 
+          <!-- обо мне текст старт -->
           <div class="about-content">
 
+            <!-- заголовок старт -->
             <h2 class="h2 section-title" data-reveal="right">
               Hi. I’m <br>
               Dima Snytin
             </h2>
+            <!-- заголовок стоп -->
 
             <div class="wrapper has-before" data-reveal="right">
 
+              <!-- описание старт -->
               <p class="section-text">
                 A passionate
                 <em class="em">photograher</em>
@@ -598,6 +681,7 @@
                 <em class="em">last 10 years.</em>
                 I’m ready to give you my best.
               </p>
+              <!-- описание стоп -->
 
               <img src="./assets/images/signature.png" width="151" height="92" loading="lazy" alt="signature"
                 class="img">
@@ -605,7 +689,9 @@
             </div>
 
           </div>
+          <!-- обо мне стоп -->
 
+          <!-- картинка старт -->
           <figure class="about-banner" data-reveal="left">
 
             <div class="img-holder has-before" style="--width: 512; --height: 684;">
@@ -620,27 +706,29 @@
               class="shape shape-2">
 
           </figure>
+          <!-- картинка стоп -->
 
           <img src="./assets/images/about-shape-3.svg" width="239" height="232" loading="lazy" alt=""
             class="shape shape-3">
 
         </div>
       </section>
+      <!-- #ABOUT обо мне стоп-->
 
 
 
 
 
-      <!-- 
-        - #SERVICE
-      -->
-
+      
+      <!-- #SERVICE мои услуги старт-->
       <section class="section service" id="service" aria-labelledby="service-lable">
 
         <p class="section-subtitle container" id="service-lable">My Services</p>
 
+        <!-- список услуг старт -->
         <ul class="service-list">
 
+          <!-- услуга-1 старт -->
           <li data-reveal>
             <div class="service-card container">
 
@@ -664,7 +752,9 @@
 
             </div>
           </li>
+          <!-- услуга-1 стоп -->
 
+          <!-- услуга-2 старт -->
           <li data-reveal>
             <div class="service-card container">
 
@@ -688,7 +778,9 @@
 
             </div>
           </li>
+          <!-- услуга-2 стоп -->
 
+          <!-- услуга-3 старт -->
           <li data-reveal>
             <div class="service-card container">
 
@@ -712,7 +804,9 @@
 
             </div>
           </li>
+          <!-- услуга-3 стоп -->
 
+          <!-- услуга-4 старт -->
           <li data-reveal>
             <div class="service-card container">
 
@@ -736,28 +830,31 @@
 
             </div>
           </li>
+          <!-- услуга- стоп -->
 
         </ul>
+        <!-- список услуг стоп -->
 
       </section>
+      <!-- #SERVICE мои услуги стоп-->
 
 
 
 
 
-      <!-- 
-        - #PORTFOLIO
-      -->
-
+      
+      <!--#PORTFOLIO мое портфолио работ старт-->
       <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-label">
         <div class="container">
 
+          <!-- портфолио старт -->
           <div class="portfolio-list">
 
             <div class="wrapper">
 
               <h2 class="h2 section-title" id="portfolio-label" data-reveal>My Recent Work.</h2>
 
+              <!-- портфолио-1 старт -->
               <div class="portfolio-card" data-reveal>
 
                 <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
@@ -781,7 +878,9 @@
                 </a>
 
               </div>
+              <!-- портфолио-1 стоп -->
 
+              <!-- портфолио-2 старт -->
               <div class="portfolio-card" data-reveal>
 
                 <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1091;">
@@ -805,6 +904,7 @@
                 </a>
 
               </div>
+              <!-- портфолио-2 стоп -->
 
             </div>
 
@@ -861,25 +961,26 @@
             </div>
 
           </div>
+          <!-- портфолио стоп -->
 
           <img src="./assets/images/portfolio-shape.svg" width="286" height="232" loading="lazy" alt="" class="shape">
 
         </div>
       </section>
+      <!--#PORTFOLIO мое портфолио работ стоп-->
 
     </article>
   </main>
+  <!-- основной контент стоп -->
 
 
 
 
-
-  <!-- 
-    - #FOOTER
-  -->
-
+  
+  <!-- #FOOTER подвал старт-->
   <footer class="footer">
 
+    <!-- картинки футер старт -->
     <div class="footer-top section" id="contact">
       <div class="container">
 
@@ -909,7 +1010,9 @@
 
       </div>
     </div>
+    <!-- картинки футер стоп -->
 
+    <!-- логотип соцсети старт -->
     <div class="footer-bottom">
       <div class="container">
 
@@ -933,45 +1036,42 @@
 
         </ul>
 
-        <p class="copyright">Made with love</p>
+        <p class="copyright">Made with love dimasnytin</p>
 
       </div>
     </div>
+    <!-- логотип соцсети стоп -->
 
+    <!-- фоновое фото футера старт -->
     <div class="footer-bg has-before">
       <img src="./assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography"
         class="img-cover">
     </div>
+    <!-- фоновое фото футера стоп -->
 
   </footer>
+  <!-- #FOOTER подвал старт-->
+  
 
 
 
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
+  
+  <!-- #BACK TO TOP подняться на вверх старт-->
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+  <!-- #BACK TO TOP подняться на вверх стоп-->
 
 
 
 
-
-  <!-- 
-    - #CUSTOM CURSOR
-  -->
-
+  
+  <!-- #CUSTOM CURSOR курсор для мышки на экране десктоп старт -->
   <div class="cursor" data-cursor></div>
+  <!-- #CUSTOM CURSOR курсор для мышки на экране десктоп стоп -->
 
 
 
 
-
-  <!-- 
-    - custom js link
-  -->
+  <!-- custom js link javascript подключаем -->
   <script src="./assets/js/script.js"></script>
 
 </body>
